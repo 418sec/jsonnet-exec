@@ -10,6 +10,6 @@ jsonnetExec.exec("/path/to/file.jsonnet", function(error, stdout, stderror) {
     }
 });
 
-var stdout = jsonnetExec.execSync("-e '{ x: 1 , y: self.x + 1 } { x: 10 }'");
+var stdout = jsonnetExec.execSync("-e", '{ x: 1 , y: self.x + 1 } { x: 10 }' );
 console.log stdout.toString();
 ```
